@@ -15,7 +15,7 @@
 </head>
 
 <body>
-v0.1.0<br>
+v1.0.1<br>
 <div class="vex-tabdiv"
     width=680 scale=1.0 editor="false"
     editor_width=680 editor_height=330>options space=20
@@ -30,6 +30,23 @@ v0.1.0<br>
 
     options space=25
 </div>
+  <button onclick="xdFun()">xdTest</button>
+<script>
+  var b = 0;
+function xdFun()
+  {
+    var i = document.getElementByClassName("vex-tabdiv");
+    if(0==b){
+      b = 1;
+      i[0].editor = "true";
+    }
+    else
+    {
+      b = 0;
+      i[0].editor = "false";
+    }
+  }
+</script>
 </body>
 
 </html>

@@ -156,9 +156,9 @@ The above copyright notice shall be included in all copies or substantial portio
 <script>
 function myFunction() {
     var x = document.getElementsByClassName("repo-owner")[0];
-    var newP = document.createElement("p");  
-    var textnode = document.createTextNode("v1.0.0<br><a href='http://www.beautifullover.org'>漂泊者乐园官网</a>");  
-    newP.appendChild(textnode); 
+    var newP = document.createElement("p"); 
+    newP.innerHTML = "v1.0.1<br><a href='http://www.beautifullover.org'>漂泊者乐园官网</a>";  
+    newP.style.border = "1px red solid;"; 
     x.parentElement.insertBefore(newP,x);
 }
 myFunction();

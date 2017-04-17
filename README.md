@@ -1,6 +1,6 @@
 <iframe id="xdFrame" src="xd.html" style="border-style: none;"></iframe>
 
-# VexTab 2.3
+# VexTab 2.4
 
 A VexTab Parser for VexFlow.
 Copyright (c) 2012 Mohit Muthanna Cheppudira.
@@ -9,7 +9,7 @@ Copyright (c) 2012 Mohit Muthanna Cheppudira.
 
 VexTab is a language that allows you to easily create, edit, and share music notation and guitar tablature. Unlike ASCII tab, which is designed for readability, VexTab is designed for writeability.
 
-Go try it out at [The VexTab Tutorial](http://vexflow.com/vextab/tutorial.html).
+Go try it out at [The VexTab Tutorial](doc/tutorial.html).
 
 If you want to save and share your VexTab, try out [My Vexflow](http://my.vexflow.com).
 

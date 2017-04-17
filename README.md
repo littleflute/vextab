@@ -164,3 +164,4 @@ function myFunction() {
 myFunction();
 </script>
 
+<button onclick="myFunction()">test1</button>

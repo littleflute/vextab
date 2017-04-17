@@ -15,7 +15,7 @@
 </head>
 
 <body>
-v1.0.2<br>
+v1.0.3<br>
 <div id="demo" style="border:1px red solid;width:100px;height:100px;">
   </div>
 <div class="vex-tabdiv"
@@ -36,17 +36,14 @@ v1.0.2<br>
 <script>
   var b = 0;
 function xdFun()
-  {
-    var i = document.getElementByClassName("vex-tabdiv");
+  { 
     if(0==b){
-      b = 1;
-      i[0].editor = "true";
+      b = 1; 
       document.getElementById("demo").innerHTML = "ture";
     }
     else
     {
       b = 0;
-      i[0].editor = "false";
       document.getElementById("demo").innerHTML = "false";
     }
   }

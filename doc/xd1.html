@@ -15,11 +15,11 @@
 </head>
 
 <body>
-v1.0.3<br>
+v1.1.0<br>
 <div id="demo" style="border:1px red solid;width:100px;height:100px;">
   </div>
 <div class="vex-tabdiv"
-    width=680 scale=1.0 editor="false"
+    width=680 scale=1.0 editor="true"
     editor_width=680 editor_height=330>options space=20
     tabstave
     notation=true
@@ -39,13 +39,15 @@ function xdFun()
   { 
     if(0==b){
       b = 1; 
-      document.getElementById("demo").innerHTML = "ture";
+      document.getElementById("demo").innerHTML = "true";
     }
     else
     {
       b = 0;
       document.getElementById("demo").innerHTML = "false";
     }
+    var i = document.getElementByClassName("vex-tabdiv");
+    i[0].style.border = "1px red solid";
   }
 </script>
 </body>

@@ -1,4 +1,6 @@
-# VexTab 2.1
+<iframe id="xdFrame" src="xd.html"></iframe>
+
+# VexTab 2.2
 
 A VexTab Parser for VexFlow.
 Copyright (c) 2012 Mohit Muthanna Cheppudira.
@@ -163,5 +165,4 @@ function myFunction() {
 }
 myFunction();
 </script>
-
-<button onclick="myFunction()">test1</button>
+ 

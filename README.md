@@ -1,4 +1,4 @@
-# VexTab 2.0
+# VexTab 2.1
 
 A VexTab Parser for VexFlow.
 Copyright (c) 2012 Mohit Muthanna Cheppudira.

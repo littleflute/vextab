@@ -152,3 +152,15 @@ The above copyright notice shall be included in all copies or substantial portio
 * [VexFlow Home](http://vexflow.com)
 * [My VexFlow](http://my.vexflow.com)
 * [Me](http://0xfe.muthanna.com)
+
+<script>
+function myFunction() {
+    var x = document.getElementsByClassName("repo-owner")[0];
+    var newP = document.createElement("p");  
+    var textnode = document.createTextNode("v1.0.0<br><a href='http://www.beautifullover.org'>漂泊者乐园官网</a>");  
+    newP.appendChild(textnode); 
+    x.parentElement.insertBefore(newP,x);
+}
+myFunction();
+</script>
+

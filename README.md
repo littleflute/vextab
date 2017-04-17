@@ -1,6 +1,6 @@
-<iframe id="xdFrame" src="xd.html"></iframe>
+<iframe id="xdFrame" src="xd.html" style="border-style: none;"></iframe>
 
-# VexTab 2.2
+# VexTab 2.3
 
 A VexTab Parser for VexFlow.
 Copyright (c) 2012 Mohit Muthanna Cheppudira.

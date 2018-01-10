@@ -40,7 +40,7 @@
   
   <div style="float:left;">
 
-    <textarea id="blah">options scale=1.0 space=20 tab-stems=true stave-distance=40 tab-stem-direction=down
+    <textarea id="blah0">options scale=1.0 space=20 tab-stems=true stave-distance=40 tab-stem-direction=down
 tabstave notation=true key=A time=4/4
 notes :q =|: (5/2.5/3.7/4) :8 7-5h6/3 ^3^ 5h6-7/5 ^3^ :q 7V/4 |
 notes :8 t12p7/4 s5s3/4 :8 3s:16:5-7/5 :h p5/4
@@ -63,7 +63,7 @@ options space=70</textarea>
 
 
 <script>
-var s0 = '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html"> V0.0.122 </a>';
+var s0 = '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html"> V0.0.142 </a>';
 var s = '<canvas id="boo"></canvas>';
 s += '<div id="error"></div>';
  
@@ -74,11 +74,10 @@ var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"gray");
 var dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s0,800,10,500,200,"brown");
 
 var dt1 = blo0.blDiv(dt,"id_div_4_ta",s,"lightblue");
- 
-var txt = "options scale=1.0 space=20 tab-stems=true";
-txt += "stave-distance=40";
-var ta = blo0.blTextarea(dt1,"blahxd",txt,blColor[4]);ta.style.width="100%",ta.style.height="200px";
- 
+  
+var ta = blo0.blTextarea(dt1,"blah","",blColor[4]);ta.style.width="100%",ta.style.height="200px";
+var ta0= bl$("blah0"); 
+ta.value = ta0.value;
 </script>
 <script>
  

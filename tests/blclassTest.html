@@ -28,20 +28,26 @@ options space=70</textarea>
 
 <script>
 function _blUIClass (v){
-  var s0 = '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '</a>';
+  var s0 = '<div id="id_div_toolbar">';
+  s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '</a>';
+  s0 += '</div>';
   var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,10,10,500,200,"gold");
-
-  var s = '<canvas id="boo"></canvas>'; 
- 
+  d.tb = bl$("id_div_toolbar");
+  d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","b1",blGrey[0]);
+  d.tb.b1.onclick = function(){
+	_on_off_div(this,d.dt);
+  }
+  var s = '<canvas id="boo"></canvas>';  
   var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"white");
  
-  var dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s0,800,10,500,200,"brown");
-  var dt1 = blo0.blDiv(dt,"id_div_4_ta","","blue");
-  var de = blo0.blDiv(dt,"error","de","red");
+  d.dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s0,800,10,500,200,"brown");
+  d.dt.dta = blo0.blDiv(d.dt,"id_div_4_ta","","blue");
+  d.dt.de = blo0.blDiv(d.dt,"error","de","red");
   
-  var ta = blo0.blTextarea(dt1,"blah","",blColor[4]);ta.style.width="100%",ta.style.height="200px";
+  d.dt.dta.ta = blo0.blTextarea(d.dt.dta,"blah","",blColor[4]);d.dt.dta.ta.style.width="100%",d.dt.dta.ta.style.height="200px";
   var ta0= bl$("blah0"); 
-  ta.value = ta0.value;
+  d.dt.dta.ta.value = ta0.value;
+  d.tb.b1.click();
 }
 
 </script>
@@ -49,7 +55,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.12") ;
+	var blco = new _blUIClass ("v0.1.15") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

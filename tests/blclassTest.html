@@ -33,11 +33,11 @@ function _blUIClass (v){
 
   var s = '<canvas id="boo"></canvas>'; 
  
-  var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"gray");
+  var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"white");
  
   var dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s0,800,10,500,200,"brown");
+  var dt1 = blo0.blDiv(dt,"id_div_4_ta","","blue");
   var de = blo0.blDiv(dt,"error","de","red");
-  var dt1 = blo0.blDiv(dt,"id_div_4_ta","","red");
   
   var ta = blo0.blTextarea(dt1,"blah","",blColor[4]);ta.style.width="100%",ta.style.height="200px";
   var ta0= bl$("blah0"); 
@@ -46,11 +46,10 @@ function _blUIClass (v){
 
 </script>
 <script>        
-    // Load VexTab module.
-    
-vextab = VexTabDiv;
+  // Load VexTab module.    
+  vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.5") ;
+	var blco = new _blUIClass ("v0.1.12") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;
@@ -78,8 +77,4 @@ vextab = VexTabDiv;
     });
   
 </script>
-
-
-</body>
-
-</html>
+</body></html>

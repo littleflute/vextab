@@ -1,18 +1,11 @@
-<html><head>  <title>VexTab Playground</title>
- 
-<!-- Support Sources -->
+<html><head>  <title>blclassTest</title>
   <script src="https://littleflute.github.io/vc6/XdHtml/blclass.js"></script>
-  <script src="../releases/vextab-div.js"></script>;
+  <script src="../releases/vextab-div.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.2.1/lodash.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>  
 </head>
-
-
 <body>
-
-  
   <div style="float:left;display:none;">
-
     <textarea id="blah0">options scale=1.0 space=20 tab-stems=true stave-distance=40 tab-stem-direction=down
 tabstave notation=true key=A time=4/4
 notes :q =|: (5/2.5/3.7/4) :8 7-5h6/3 ^3^ 5h6-7/5 ^3^ :q 7V/4 |
@@ -33,104 +26,56 @@ text ++, .30, #f
 options space=70</textarea>
   </div>
 
-
 <script>
+function _blUIClass (v){
+  var s0 = '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '</a>';
+  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,10,10,500,200,"gold");
 
-function _blUIClass () {
-  function _init (v) {
-
-	var s0 ='<div id="id_div_toolbar">';
-	s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">';
-	s0 += v;
-	s0 += '</a>';
-	s0 += '</div>';
-	var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,10,10,500,200,"gold");
-	d.tb = bl$("id_div_toolbar");
-	d.tb.b1 = blo0.blBtn(d.tb,d.tb.id+"b1","b1",blGrey[0]);
-	d.tb.b1.onclick = function(){_initVexTab();};
-
-	var s = '<canvas id="boo"></canvas>';
-	s += '<div id="error"></div>';
+  var s = '<canvas id="boo"></canvas>'; 
  
-
-	var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"gray");
+  var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"gray");
  
-	var dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s0,800,10,500,200,"brown");
-
-	var dt1 = blo0.blDiv(dt,"id_div_4_ta",s,"lightblue");
+  var dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s0,800,10,500,200,"brown");
+  var de = blo0.blDiv(dt,"error","de","red");
+  var dt1 = blo0.blDiv(dt,"id_div_4_ta","","red");
   
-	var ta = blo0.blTextarea(dt1,"blah","",blColor[4]);ta.style.width="100%",ta.style.height="200px";
-	var ta0= bl$("blah0"); 
-	ta.value = ta0.value;
-  }
-  function _initVexTab (){
-      VexTab = vextab.VexTab;
-
-      Artist = vextab.Artist;
-
-      Renderer = Vex.Flow.Renderer;
-
-
-      Artist.DEBUG = true;
-
-      VexTab.DEBUG = false;
-
-
-      // Create VexFlow Renderer from canvas element with id #boo
-
-      renderer = new Renderer($('#boo')[0], Renderer.Backends.CANVAS);
-
-
-      // Initialize VexTab artist and parser.
-
-      artist = new Artist(10, 10, 600, {scale: 0.8});
-
-      vextab = new VexTab(artist);
-
-
-      function render( idParse , idError ) {
-
-        try {
-
-          vextab.reset();
-
-          artist.reset();
-
-          vextab.parse($(idParse ).val());
-
-          artist.render(renderer);
-
-          $(idError).text("");
-
-        } catch (e) {
-
-          console.log(e);
-
-          $(idError).html(e.message.replace(/[\n]/g, '<br/>'));
-
-        }
-
-      }
-
-
-      $("#blah").keyup(_.throttle(render, 250));
-
-      render("#blah","#error");
-  }
-  this.blInit = function(v){_init(v);}
+  var ta = blo0.blTextarea(dt1,"blah","",blColor[4]);ta.style.width="100%",ta.style.height="200px";
+  var ta0= bl$("blah0"); 
+  ta.value = ta0.value;
 }
 
-
 </script>
-<script>
-// Load VexTab module.
+<script>        
+    // Load VexTab module.
     
 vextab = VexTabDiv;
-
-$(function() {
-      var blco = new _blUIClass ();        
-      blco.blInit("v0.0.164");      
-   });
+    $(function() {
+	var blco = new _blUIClass ("v0.1.5") ;
+      VexTab = vextab.VexTab;
+      Artist = vextab.Artist;
+      Renderer = Vex.Flow.Renderer;
+      Artist.DEBUG = true;
+      VexTab.DEBUG = false;
+      // Create VexFlow Renderer from canvas element with id #boo
+      renderer = new Renderer($('#boo')[0], Renderer.Backends.CANVAS);
+      // Initialize VexTab artist and parser.
+      artist = new Artist(10, 10, 600, {scale: 0.8});
+      vextab = new VexTab(artist);
+      function render() {
+        try {
+          vextab.reset();
+          artist.reset();
+          vextab.parse($("#blah").val());
+          artist.render(renderer);
+          $("#error").text("");
+        } catch (e) {
+          console.log(e);
+          $("#error").html(e.message.replace(/[\n]/g, '<br/>'));
+        }
+      }
+      $("#blah").keyup(_.throttle(render, 250));
+      render();
+    });
   
 </script>
 

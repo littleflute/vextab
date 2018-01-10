@@ -1,3 +1,4 @@
+
 <html><head>  <title>blclassTest</title>
   <script src="https://littleflute.github.io/vc6/XdHtml/blclass.js"></script>
   <script src="../releases/vextab-div.js"></script>
@@ -37,6 +38,11 @@ function _blUIClass (v){
   d.tb.b1.onclick = function(){
 	_on_off_div(this,d.dt);
   }
+  d.tb.b2 = blo0.blBtn(d.tb,d.tb.id + "b2","b2",blGrey[0]);
+  d.tb.b2.onclick = function(){
+	_on_off_div(this,d.handle);
+	_on_off_div(this,d.main);
+  }
   var s = '<canvas id="boo"></canvas>';  
   var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"white");
  
@@ -48,6 +54,7 @@ function _blUIClass (v){
   var ta0= bl$("blah0"); 
   d.dt.dta.ta.value = ta0.value;
   d.tb.b1.click();
+  d.tb.b2.click();
 }
 
 </script>
@@ -55,7 +62,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.15") ;
+	var blco = new _blUIClass ("v0.1.22") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

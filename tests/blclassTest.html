@@ -65,15 +65,15 @@ function _blUIClass (v){
 
   var s1 = '<div id="id_div_toolbar0_4_ta"></div><div id="id_div_toolbar1_4_ta"></div>';
   d.dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s1,800,10,500,200,"gray");
-  d.dt.tb0 = bl$("id_div_toolbar0_4_ta");
+  d.dt.tb0 = blo0.blDiv(bl$("id_div_toolbar0_4_ta"),bl$("id_div_toolbar0_4_ta").id+"tb0","tb0::",blGrey[0]);
   d.dt.tb0.b1 = blo0.blBtn(d.dt.tb0,d.dt.tb0.id + "b1","b1",blGrey[0]);
   d.dt.tb0.b1.onclick = function(){	_on_off_div(this,d.dt.handle);	_on_off_div(this,d.dt.main);   }
-  d.dt.tb1 = bl$("id_div_toolbar1_4_ta");
+  d.dt.tb1 = blo0.blDiv(bl$("id_div_toolbar1_4_ta"),bl$("id_div_toolbar1_4_ta").id+"tb0","tb1::",blGrey[1]);
   d.dt.tb1.b0 = blo0.blBtn(d.dt.tb1,d.dt.tb1.id + "b0","ta0",blGrey[0]);
   d.dt.tb1.b0.onclick = function(){
 	var t= bl$("ta0");   d.dt.dta.ta.value = t.value; d.showVextab();
   }
-  d.dt.tb1.b1 = blo0.blBtn(d.dt.tb1,d.dt.tb1.id + "b1","ta1",blGrey[0]);
+  d.dt.tb1.b1 = blo0.blBtn(d.dt.tb1,d.dt.tb1.id + "b1","ta1",blGrey[1]);
   d.dt.tb1.b1.onclick = function(){
 	var t= bl$("ta1");   d.dt.dta.ta.value = t.value; d.showVextab();
   }
@@ -93,7 +93,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.44") ;
+	var blco = new _blUIClass ("v0.1.52") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

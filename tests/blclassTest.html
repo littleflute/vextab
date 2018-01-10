@@ -36,7 +36,7 @@ options space=70</textarea>
 
 <script>
 
-function _blUIClass (v) {
+function _blUIClass () {
   function _init (v) {
 
 	var s0 ='<div id="id_div_toolbar">';
@@ -47,7 +47,7 @@ function _blUIClass (v) {
 	var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,10,10,500,200,"gold");
 	d.tb = bl$("id_div_toolbar");
 	d.tb.b1 = blo0.blBtn(d.tb,d.tb.id+"b1","b1",blGrey[0]);
-	d.tb.b1.onclick = function(){alert(1);};
+	d.tb.b1.onclick = function(){_initVexTab();};
 
 	var s = '<canvas id="boo"></canvas>';
 	s += '<div id="error"></div>';
@@ -63,24 +63,7 @@ function _blUIClass (v) {
 	var ta0= bl$("blah0"); 
 	ta.value = ta0.value;
   }
-  _init(v);
-
-  this.blRun = function(){
-  }
-}
-
-
-</script>
-<script>
- 
-        
-    // Load VexTab module.
-    
-vextab = VexTabDiv;
-
-$(function() {
-      var blco = new _blUIClass ("v0.0.155");  
-      
+  function _initVexTab (){
       VexTab = vextab.VexTab;
 
       Artist = vextab.Artist;
@@ -133,8 +116,21 @@ $(function() {
       $("#blah").keyup(_.throttle(render, 250));
 
       render("#blah","#error");
+  }
+  this.blInit = function(v){_init(v);}
+}
 
-    });
+
+</script>
+<script>
+// Load VexTab module.
+    
+vextab = VexTabDiv;
+
+$(function() {
+      var blco = new _blUIClass ();        
+      blco.blInit("v0.0.164");      
+   });
   
 </script>
 

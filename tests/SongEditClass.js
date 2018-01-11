@@ -1,7 +1,7 @@
 
 //file: SongEditClass.js  by littleflute 2018/1/12 2:49 bjt
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.71";
+	this.v = "v0.0.72";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
@@ -21,7 +21,7 @@ function _blSongEditClass (_d,_t){
 					var id = this_.id + (ns.length + 1);
 					var html = "ns" + (ns.length + 1);
 					var b = blo0.blBtn(div.v.tb,id,html,blColor[1]);
-					b.ta = blo0.blTextarea(document.body,b.id+"_ta","",0,0,100,100,blColor[0]);
+					b.ta = blo0.blTextarea(document.body,b.id+"_ta","",blColor[4]);
 					b.onclick = function(tt){return function(){
 						if(!ta.old){ta.old=null;}
 						if(ta.old!=null){ta.old.value = ta.value;}

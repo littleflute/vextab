@@ -1,7 +1,7 @@
 
 //file: SongEditClass.js  by littleflute 2018/1/12 2:49 bjt
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.61";
+	this.v = "v0.0.62";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
@@ -11,9 +11,8 @@ function _blSongEditClass (_d,_t){
 	};	this.bll1= "--1--";
 	this.blr_Songs = function(btn,div){
 		if(!div.v){
-			div.v=blo0.blDiv(div,div.id+"_v","samples",blColor[0]); 			
-			div.v.songs=blo0.blDiv(div.v,div.v.id+"songs","songs:",blColor[3]); 	
-			_loadSongsList(div.v.songs);
+			div.v=blo0.blDiv(div,div.id+"_v","",blColor[0]); 			 	
+			_loadSongsList(div.v);
 			div.v.tb=blo0.blDiv(div.v,div.v.id+"tb","tb:",blGrey[2]); 
 			var b1 = blo0.blBtn(div.v.tb,div.v.tb.id + "b1","[+song]",blColor[1]);
 			b1.onclick = function(this_){

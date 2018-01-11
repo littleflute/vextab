@@ -2,7 +2,7 @@
 //file: SongEditClass.js  by littleflute 2018/1/12 2:49 bjt
 
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.42";
+	this.v = "v0.0.43";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
@@ -51,7 +51,8 @@ function _blSongEditClass (_d,_t){
 		}_on_off_div(btn,div);		
 	}; this.bll2= "--2--"; 
 	this.blr_AboutMe = function(btn,div){
-		div.innerHTML = blo0.blhMakeLink ("SongEditClass.js","SongEditClass.js","color:red","_blank");
+		var s = blo0.blhMakeLink ("SongEditClass.js*","https://github.com/littleflute/vextab/edit/master/tests/SongEditClass.js","color:red","_blank");
+		div.innerHTML = s;
 		_on_off_div(btn,div);	
 	}; 
 }

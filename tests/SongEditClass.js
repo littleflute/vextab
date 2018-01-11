@@ -1,7 +1,7 @@
 
 //file: SongEditClass.js  by littleflute 2018/1/12 2:49 bjt
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.62";
+	this.v = "v0.0.71";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
@@ -79,6 +79,6 @@ function _blEditClass (_o,_d,_t){
 	r.a3 = blo0.blBtn(r,r.id + "a3","a3",blGrey[0]);r.a3.onclick = function(){ta.value += "\ntabstave notation=true \n notes 4-5-6/3 10/4"; d.showVextab(); }
 } 
 var _loadSongsList = function(d){
-		var sd = blo0.blDiv(d,"id_div_songs_list","songs:",blGrey[5]);
+		var sd = blo0.blDiv(d,"id_div_songs_list","",blGrey[5]);
 		blo0.blScript("id_script_songs_list","songs/SongsList.js");
 }

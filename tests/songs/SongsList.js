@@ -12,7 +12,7 @@ var ls = [
 ];
 var ld = bl$("id_div_songs_list");
 if(ld){
-	var s = "v0.0.61 ";
+	var s = "v0.0.62 ";
 	s += blo0.blhMakeLink ("SongsList.js","songs/SongsList.js","color:blue","_blank");
 	s += blo0.blhMakeLink ("SongsList.js*","https://github.com/littleflute/vextab/edit/master/tests/songs/SongsList.js","color:red","_blank");
 	s += "<div id='id_div_song_src'></div>";
@@ -21,7 +21,7 @@ if(ld){
 	for(i in ls){
 		var b = blo0.blBtn(ld,"id_btn_song_"+i,"s"+i,blColor[i]);
 		var id = "id_ta_song_"+i;
-		b.ta = blo0.blTextarea(document.body,id,id,blColor[0]);
+		b.ta = blo0.blTextarea(document.body,id,id,blColor[0]);b.ta.style.display="none";
 		b.onclick = function(n_){
 			return function(){
 				var f = "songs/s"+n_+".js"; 

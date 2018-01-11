@@ -62,7 +62,7 @@ tabstave notation=true key=C time=4/4
 
 <script>
 function _blEditClass (_o,_d,_t){
-	this.v = "v0.0.32";
+	this.v = "v0.0.33";
 	var o = _o;
 	var d = _d;
 	var ta = _t;
@@ -77,9 +77,14 @@ function _blEditClass (_o,_d,_t){
 		var r = "notes :8  " + i + "/" + j + " " + (i+4)+ "/" + j +" " + (i+7) + "/" + j + " " + (i+12) + "/" + j + " " + (i+7) +"/" + j + " |";
 		return r;
 	}
+	var r = blo0.blDiv(o,o.id+"_add_line","[+line]",blColor[4]);	 
+  	r.a0 = blo0.blBtn(r,r.id + "a0","a0",blGrey[0]);r.a0.onclick = function(){	ta.value = "tabstave"; d.showVextab(); }
+  	r.a1 = blo0.blBtn(r,r.id + "a1","a1",blGrey[0]);r.a1.onclick = function(){ta.value = "tabstave notation=true clef=bass key=Ab time=C| \n notes 4-5/6"; d.showVextab(); }
+  	r.a2 = blo0.blBtn(r,r.id + "a2","a2",blGrey[0]);r.a2.onclick = function(){ta.value = "tabstave notation=true tablature=false \n notes Cn-D-E/4 F#/5"; d.showVextab(); }
+	r.a3 = blo0.blBtn(r,r.id + "a3","a3",blGrey[0]);r.a3.onclick = function(){ta.value = "tabstave notation=true \n notes 4-5-6/3 10/4"; d.showVextab(); }
 }
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.25";
+	this.v = "v0.0.32";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
@@ -89,13 +94,15 @@ function _blSongEditClass (_d,_t){
 	};	this.bll1= "--1--";
 	this.blr_New = function(btn,div){
 		if(!div.v){
-			div.v=blo0.blDiv(div,div.id+"_v","new:",blColor[0]);
-			div.v.b1 = blo0.blBtn(div.v,div.v.id + "b1","s1",blGrey[0]);
-			div.v.b1.onclick = function(){var t= bl$("s1");   ta.value = t.value; d.showVextab();} 
-			div.v.b2 = blo0.blBtn(div.v,div.v.id + "b2","ta0",blGrey[0]);
-			div.v.b2.onclick = function(){var t= bl$("ta0");   ta.value = t.value; d.showVextab();} 
-			div.v.b3 = blo0.blBtn(div.v,div.v.id + "b3","ta1",blGrey[0]);
-			div.v.b3.onclick = function(){var t= bl$("ta1");   ta.value = t.value; d.showVextab();} 
+			div.v=blo0.blDiv(div,div.id+"_v","new:",blColor[0]); 
+			var t = document.getElementsByTagName("textarea");
+			for (var i = 0; i < t.length; i++){
+				if(t[i].id!="blah")
+				{	
+					var b = blo0.blBtn(div.v,div.v.id + t[i].id,t[i].id,blGrey[0]);
+					b.onclick = function(tt){return function(){ta.value = tt.value; d.showVextab();}}(t[i]);
+				}
+			}
 		}_on_off_div(btn,div);		
 	}; this.bll2= "--2--"; 
 }
@@ -156,7 +163,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.153") ;
+	var blco = new _blUIClass ("v0.1.155") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

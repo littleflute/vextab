@@ -1,7 +1,7 @@
 
 //file: SongEditClass.js  by littleflute 2018/1/12 2:49 bjt
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.53";
+	this.v = "v0.0.61";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
@@ -12,7 +12,8 @@ function _blSongEditClass (_d,_t){
 	this.blr_Songs = function(btn,div){
 		if(!div.v){
 			div.v=blo0.blDiv(div,div.id+"_v","samples",blColor[0]); 			
-			div.v.msg=blo0.blDiv(div.v,div.v.id+"msg","msg:",blColor[3]); 	
+			div.v.songs=blo0.blDiv(div.v,div.v.id+"songs","songs:",blColor[3]); 	
+			_loadSongsList(div.v.songs);
 			div.v.tb=blo0.blDiv(div.v,div.v.id+"tb","tb:",blGrey[2]); 
 			var b1 = blo0.blBtn(div.v.tb,div.v.tb.id + "b1","[+song]",blColor[1]);
 			b1.onclick = function(this_){
@@ -78,3 +79,7 @@ function _blEditClass (_o,_d,_t){
   	r.a2 = blo0.blBtn(r,r.id + "a2","a2",blGrey[0]);r.a2.onclick = function(){ta.value += "\ntabstave notation=true tablature=false \n notes Cn-D-E/4 F#/5"; d.showVextab(); }
 	r.a3 = blo0.blBtn(r,r.id + "a3","a3",blGrey[0]);r.a3.onclick = function(){ta.value += "\ntabstave notation=true \n notes 4-5-6/3 10/4"; d.showVextab(); }
 } 
+var _loadSongsList = function(d){
+		var sd = blo0.blDiv(d,"id_div_songs_list","songs:",blGrey[5]);
+		blo0.blScript("id_script_songs_list","songs/SongsList.js");
+}

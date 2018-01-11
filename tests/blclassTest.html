@@ -1,4 +1,5 @@
 
+
 <html><head>  <title>blclassTest</title>
   <script src="https://littleflute.github.io/vc6/XdHtml/blclass.js"></script>
   <script src="../releases/vextab-div.js"></script>
@@ -81,7 +82,8 @@ function _blUIClass (v){
   this.blRender = function(){alert(v);};
 
   var s0 = '<div id="id_div_toolbar">';
-  s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '</a>';
+  s0 += '<a target="_blank" href="http://littleflute.github.io/vextab/tests/blclassTest.html">' + v + '</a>-';
+  s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '*</a>';
   s0 += '</div>';
   var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,10,10,500,200,"gold");
   d.tb = bl$("id_div_toolbar");
@@ -118,7 +120,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.313") ;
+	var blco = new _blUIClass ("v0.2.2") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

@@ -27,23 +27,29 @@ text ++, .30, #f
 options space=70</textarea><!-- ====ta0==== -->
 
 <!-- ----ta1---- -->
-<textarea id="ta1">options scale=1.1 space=20 tab-stems=true stave-distance=40 tab-stem-direction=down
-tabstave notation=true key=A time=4/4
-notes :q =|: (5/2.5/3.7/4) :8 7-5h6/3 ^3^ 5h6-7/5 ^3^ :q 7V/4 |
-notes :8 t12p7/4 s5s3/4 :8 3s:16:5-7/5 :h p5/4
-text :w, |#segno, ,|, :hd, , #tr
+<textarea id="ta1">
 
-options space=65
-tabstave notation=true
-notes :q (5/4.5/5) (7/4.7/5)s(5/4.5/5) ^3^
-notes :8 7-5/4 $.a./b.$ (5/4.5/5)h(7/5) =:|
-notes :8 (12/5.12/4)ds(5/5.5/4)u 3b4/5
-notes :h (5V/6.5/4.6/3.7/2) $.italic.let ring$ =|=
-text :h, ,.font=Times-12-italic, D.S. al coda, |#coda
-text :h, ,.-1, .font=Arial-14-bold,A13
-text ++, .30, #f
+    
+options space=20
+tabstave notation=true tablature=false  
+key=A time=4/4
+notes :8 B/4 :q C/5 :8 B/4 :q C/5 B/4 |  :8 B/4 :q C/5 :8 B/4 :qd C/5 :8 E/4 |  F-A-A-A/4 B-G-E/4-C/5 | :h bC/5 :qd bC/5 :8 E/5|
+text :w, .1, A, A,|
+text :h, .1, D, E,| 
+text :w, .1, F#m
 
-options space=70</textarea> <!-- ====ta1==== -->
+options space=20
+tabstave notation=true tablature=false
+
+key=A time=4/4
+notes :8 F-E/5 :q F/5 :8 D-C/5-B-A/4 |:h bA/4 E/4 |:q A/4 :8 C/5 B/4 bB/4 E-F-E/4 |:q A/4
+text :h, .1, D, E,| 
+text :w, .1, A
+text :w, .1, A  
+
+options space=25
+
+</textarea> <!-- ====ta1==== -->
 
 <!-- ----s1---- -->
 <textarea id="s1">
@@ -55,12 +61,12 @@ tabstave notation=true key=C time=4/4
 </div>
 
 <script>
-function _blMajorChordClass (_o,_d,_t){
-	this.v = "v0.0.31";
+function _blEditClass (_o,_d,_t){
+	this.v = "v0.0.32";
 	var o = _o;
 	var d = _d;
 	var ta = _t;
-	var r = blo0.blDiv(o,o.id+"_blMajorChordClass","_blMajorChordClass",blGrey[1]);	 
+	var r = blo0.blDiv(o,o.id+"_blMajorChordClass","_blMajorChordClass",blColor[4]);	 
   	r.C = blo0.blBtn(r,r.id + "C","C",blGrey[3]);  	
 	r.C.onclick = function(){		ta.value = bl$("s1").value + _strMajorChord(1,2); d.showVextab(); 		}
   	r.D = blo0.blBtn(r,r.id + "D","D",blGrey[3]);  	
@@ -72,25 +78,26 @@ function _blMajorChordClass (_o,_d,_t){
 		return r;
 	}
 }
-function _blChordEditClass (_d,_t){
-	this.v = "v0.0.15";
+function _blSongEditClass (_d,_t){
+	this.v = "v0.0.25";
 	var _v = null;
 	var d = _d;
 	var ta = _t;
-	this.blrMajorChord = function(btn,div){
-		if(!_v){_v=blo0.blDiv(div,div.id+"_v","v::",blGrey[0]);_v.majorChord = new _blMajorChordClass(_v,d,ta);}
+	this.blr_Edit = function(btn,div){
+		if(!_v){_v=blo0.blDiv(div,div.id+"_v","v::",blGrey[0]);_v.majorChord = new _blEditClass(_v,d,ta);}
 		_on_off_div(btn,div);	
-	}
-	this.bll1= "--1--";
-	this.blrS1 = function(btn,div){
-		var t= bl$("s1");   ta.value = t.value; d.showVextab();	
-	}
-	this.blrTa0 = function(btn,div){
-		var t= bl$("ta0");   ta.value = t.value; d.showVextab();	
-	}
-	this.blrTa1 = function(btn,div){
-		var t= bl$("ta1");   ta.value = t.value; d.showVextab();	
-	} 
+	};	this.bll1= "--1--";
+	this.blr_New = function(btn,div){
+		if(!div.v){
+			div.v=blo0.blDiv(div,div.id+"_v","new:",blColor[0]);
+			div.v.b1 = blo0.blBtn(div.v,div.v.id + "b1","s1",blGrey[0]);
+			div.v.b1.onclick = function(){var t= bl$("s1");   ta.value = t.value; d.showVextab();} 
+			div.v.b2 = blo0.blBtn(div.v,div.v.id + "b2","ta0",blGrey[0]);
+			div.v.b2.onclick = function(){var t= bl$("ta0");   ta.value = t.value; d.showVextab();} 
+			div.v.b3 = blo0.blBtn(div.v,div.v.id + "b3","ta1",blGrey[0]);
+			div.v.b3.onclick = function(){var t= bl$("ta1");   ta.value = t.value; d.showVextab();} 
+		}_on_off_div(btn,div);		
+	}; this.bll2= "--2--"; 
 }
 function _blChordToolBar (_o,_d){
 	var d	= _d;
@@ -101,7 +108,7 @@ function _blChordToolBar (_o,_d){
  
   	r.e = blo0.blBtn(o,o.id + "e","e",blGrey[3]);
   	r.e.onclick = function(){
-		if(!de){de=blo0.blDiv(o,o.id+ "_div_e","e:",blGrey[4]);de.o = new _blChordEditClass(d,ta);blo0.blShowObj2Div(de,de.o);}
+		if(!de){de=blo0.blDiv(o,o.id+ "_div_e","e:",blGrey[4]);de.o = new _blSongEditClass(d,ta);blo0.blShowObj2Div(de,de.o);}
 		_on_off_div(this,de);
   	}
 	return r;
@@ -149,7 +156,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.144") ;
+	var blco = new _blUIClass ("v0.1.153") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

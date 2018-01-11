@@ -12,7 +12,7 @@ var ls = [
 ];
 var ld = bl$("id_div_songs_list");
 if(ld){
-	var s = "v0.0.55 ";
+	var s = "v0.0.61 ";
 	s += blo0.blhMakeLink ("SongsList.js","songs/SongsList.js","color:blue","_blank");
 	s += blo0.blhMakeLink ("SongsList.js*","https://github.com/littleflute/vextab/edit/master/tests/songs/SongsList.js","color:red","_blank");
 	s += "<div id='id_div_song_src'></div>";
@@ -40,8 +40,8 @@ if(ld){
 					d.showVextab();
 				}
 				var s = "";
-				s += blo0.blhMakeLink (n_+".js",f,"color:blue","_blank");
-				s += blo0.blhMakeLink (n_+".js*","https://github.com/littleflute/vextab/edit/master/tests/"+f,"color:red","_blank");
+				s += blo0.blhMakeLink ("s"+n_+".js",f,"color:blue","_blank");
+				s += blo0.blhMakeLink ("s"+n_+".js*","https://github.com/littleflute/vextab/edit/master/tests/"+f,"color:red","_blank");
 	
 				bl$("id_div_song_src").innerHTML = s;
 

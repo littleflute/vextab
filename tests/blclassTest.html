@@ -102,7 +102,7 @@ function _blSongEditClass (_d,_t){
 				var ns = [];
 				return function(){
 					var id = this_.id + (ns.length + 1);
-					var html = "ns" + (ns.length + 1)
+					var html = "ns" + (ns.length + 1);
 					var b = blo0.blBtn(div.v.tb,id,html,blColor[1]);
 					b.onclick = function(){div.v.msg.innerHTML = this.id;};
 					ns.push(b);
@@ -114,7 +114,13 @@ function _blSongEditClass (_d,_t){
 				if(t[i].id!="blah")
 				{	
 					var b = blo0.blBtn(div.v.tb,div.v.tb.id + t[i].id,t[i].id,blGrey[0]);
-					b.onclick = function(tt){return function(){ta.value = tt.value; d.showVextab();}}(t[i]);
+					b.onclick = function(tt){return function(){
+						if(!ta.old){ta.old=null;}
+						if(ta.old!=null){ta.old.value = ta.value;}
+						ta.value = tt.value;
+						ta.old=tt; 
+						d.showVextab();}
+					}(t[i]);
 				}
 			}
 		}_on_off_div(btn,div);		
@@ -158,15 +164,12 @@ function _blUIClass (v){
 
 
   d.dt.dta = blo0.blDiv(d.dt,"id_div_4_ta","","blue");
-  d.dt.de = blo0.blDiv(d.dt,"error","de","red");
-  
+  d.dt.de = blo0.blDiv(d.dt,"error","de","red");  
 
   d.dt.dta.ta = blo0.blTextarea(d.dt.dta,"blah","",blColor[4]);d.dt.dta.ta.style.width="100%",d.dt.dta.ta.style.height="200px";
 
   d.dt.ctb = _blChordToolBar(bl$("id_div_toolbar0_4_ta"),d); 
-
-  var ta0= bl$("ta0"); 
-  d.dt.dta.ta.value = ta0.value;
+ 
   d.tb.b1.click();
   d.tb.b2.click();
   d.dt.tb0.b1.click();
@@ -177,7 +180,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.1.244") ;
+	var blco = new _blUIClass ("v0.1.252") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

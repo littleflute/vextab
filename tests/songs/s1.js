@@ -1,4 +1,4 @@
-//file: s1.js  by littleflute 2018/3/9 0:57 usa
+//file: s1.js  by littleflute 2018/3/9 0:59 usa
 var id_song = 1;
 
 
@@ -16,7 +16,7 @@ key=C time=4/4
 options scale=1.23 space=20  
 tabstave notation=true tablature=false
 key=C time=4/4
- notes F/3 F-A/4-C/5 |  :8 F/3 F-A/4-C/5 F/3 F-A/4-C/5 |
+ notes :4 F/3 F-A/4-C/5 |  :8 F/3 F-A/4-C/5 F/3 F-A/4-C/5 |
 
 options scale=1.23 space=20   
 

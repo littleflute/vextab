@@ -10,7 +10,13 @@ _begine_
 options scale=1.23 space=20  
 tabstave notation=true tablature=false  
 key=C time=4/4
-text :w, .-2, Footsteps 
+text :w, .-2, Footsteps       _v:0.0.2
+notes :8 C-D-E-G/4 :q bG/4 :8 E-D/4|  C-D-E/4 A/3 :q bA/3 ## | :8 A/3-C/4 A/3-C/4 :q A/3 G/3 | E-D/4 :w #5#|
+ 
+options scale=1.23 space=20  
+tabstave notation=true tablature=false  
+key=C time=4/4
+text :w, .12, Footsteps 
 notes :8 C-D-E-G/4 :q bG/4 :8 E-D/4|  C-D-E/4 A/3 :q bA/3 ## | :8 A/3-C/4 A/3-C/4 :q A/3 G/3 | E-D/4 :w #5#|
  
 

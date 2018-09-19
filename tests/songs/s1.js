@@ -8,15 +8,12 @@ function _myData()
 _begine_
 	
 options scale=1.23 space=20  
-tabstave notation=true tablature=false
-
+tabstave notation=true tablature=false  
 key=C time=4/4
- notes C/4 C-E-G/5 |  :8 C/4 C-E-G/5 C/4 C-E-G/5 |
+text :w, .-2, Footsteps 
+notes :8 C-D-E-G/4 :q bG/4 :8 E-D/4|  C-D-E/4 A/3 :q bA/3 ## | :8 A/3-C/4 A/3-C/4 :q A/3 G/3 | E-D/4 :w #5#|
+ 
 
-options scale=1.23 space=20  
-tabstave notation=true tablature=false
-key=C time=4/4
- notes :4 F/3 F-A/4-C/5 |  :8 F/3 F-A/4-C/5 F/3 F-A/4-C/5 |
 
 options scale=1.23 space=20   
 

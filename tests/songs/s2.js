@@ -8,12 +8,13 @@ function _myData()
 /*
 _begine_
 	
- options width=750 space = 20 
+
+options width=750 space = 50 
 
 tabstave notation=true tablature=false key=C time = 4/4
 notes #7# #7# 5/2 :8 5-3/2| :h 1/2 :q 1/2 :8 5-4/3|:h 2/3 :q 5-4/3| 2/3 :hd 0/3
 text .10, :q, , ,你, :8, 的,脚, |,:h, 步, :q,我, :8,的,脚,|,:h,步,:q,都,有,|,祝,:hd ,福,|
-
+text ++, .-3 :w, , , 脚 步
 
 options width=750 space = 20 
 tabstave notation=true tablature=false key=C time = 4/4
@@ -44,6 +45,8 @@ text .10, :q, 哈,利,:h,路,|,:h,亚,:q, ,:8, 在,你, |,手,中,都,将,:q,变
 
 
 options width=750 space = 50 
+
+
 
 _end_
 */

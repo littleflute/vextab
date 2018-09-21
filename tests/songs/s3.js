@@ -7,22 +7,17 @@ function _myData()
 /*
 _begine_
 	
-options scale=1.23 space=20  
-tabstave notation=true tablature=false  
-key=C time=4/4
-text :w, .-2, Footsteps       _v:0.0.2
-notes :8 C-D-E-G/4 :q bG/4 :8 E-D/4|  C-D-E/4 A/3 :q bA/3 ## | :8 A/3-C/4 A/3-C/4 :q A/3 G/3 | E-D/4 :w #5#|
- 
-options scale=1.23 space=20  
-tabstave notation=true tablature=false  
-key=C time=4/4
-text :w, .12, Footsteps 
-notes :8 C-D-E-G/4 :q bG/4 :8 E-D/4|  C-D-E/4 A/3 :q bA/3 ## | :8 A/3-C/4 A/3-C/4 :q A/3 G/3 | E-D/4 :w #5#|
- 
+var md = blo0.blMDiv(document.body,"id_mdiv_music", "md-v0.0.2",   300,100,500,400,blColor[1]);
+var v1 = blo0.blDiv(md,md.id+"v1","v1",blGrey[0]);   
+var b1 = blo0.blBtn(v1,"v1b1","b1a",blGrey[1]);
+b1.onclick = function(){
+    var t1 = bl$("blah");
+    var d1 = bl$("id_blClassDiv_4_wrap1");
+    t1.value = "221a5";
+    d1.showVextab ();
+}
 
-
-options scale=1.23 space=20   
-
+_on_off_div(null,md);
 
 _end_
 */

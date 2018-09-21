@@ -6,29 +6,19 @@ function _myData()
 {
 /*
 _begine_
-	
-
     
-options space=20
-tabstave notation=true tablature=false  
-key=A time=4/4
-notes :8 B/4 :q C/5 :8 B/4 :q C/5 B/4 |  :8 B/4 :q C/5 :8 B/4 :qd C/5 :8 E/4 |  F-A-A-A/4 B-G-E/4-C/5 | :h bC/5 :qd bC/5 :8 E/5|
-text :w, .1, A, A,|
-text :h, .1, D, E,| 
-text :w, .1, F#m
+options space=30
+tabstave notation=true tablature=false  key=A time=4/4
+notes :8 B/4 :q C/5 :8 B/4 :q C/5 B/4 |:8 B/4 :q C/5 :8 B/4 :qd C/5 :8 E/4 |  F-A-A-A/4 B-G-E/4-C/5 | :h bC/5 :qd bC/5 :8 E/5|
+text :w, .1, A,|, A,|,:h, D, E,|, :w,  F#m
+text ++, .-3, :w, ,童 年
 
 options space=20
-tabstave notation=true tablature=false
-
-key=A time=4/4
-notes :8 F-E/5 :q F/5 :8 D-C/5-B-A/4 |:h bA/4 E/4 |:q A/4 :8 C/5 B/4 bB/4 E-F-E/4 |:q A/4
-text :h, .1, D, E,| 
-text :w, .1, A
-text :w, .1, A  
+tabstave notation=true tablature=false  key=A time=4/4
+notes :8 F-E/5 :q F/5 :8 D-C/5-B-A/4 |:h bA/4 E/4 |:q A/4 :8 C/5 B/4 bB/4 E-F-E/4 | 
+text :h, .1, D, E,|,:w ,A,|,A
 
 options space=25
-
-
 
 _end_
 */

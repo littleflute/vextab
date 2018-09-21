@@ -9,14 +9,16 @@ function _myData()
 _begine_
 	
 
-options width=750 space = 50 
+options width=750 space = 50 font-size=14 
 
 tabstave notation=true tablature=false key=C time = 4/4
 notes #7# #7# 5/2 :8 5-3/2| :h 1/2 :q 1/2 :8 5-4/3|:h 2/3 :q 5-4/3| 2/3 :hd 0/3
 text .10, :q, , ,你, :8, 的,脚, |,:h, 步, :q,我, :8,的,脚,|,:h,步,:q,都,有,|,祝,:hd ,福,|
 text ++, .-3 :w, , , 脚 步
+  
+text ++, .-2 :w, , , , 词曲：盛晓玫（Amy Sand)
 
-options width=750 space = 20 
+options width=750 space = 20 font-size=14 
 tabstave notation=true tablature=false key=C time = 4/4
 notes :q #7# #7# 5/2 :8 5-3/2| :h 1/2 :q 1/2 :8 5-4/3|:h 2/3  :8 7-5-4-2/3 |:w 4/3
 text .10, :q, , ,每, :8, 个,脚, |,:h, 步, :q,我, :8,要,跟,|,:h,随,:8,蒙,福,的,道,|,:w,路,|
@@ -31,7 +33,7 @@ text .10, :q, 哈,利,:h,路,|,:h,亚,:q, ,:8,让,我, |,勇,敢,踏,出,跟,随
 options width=750 space = 20 
 tabstave notation=true tablature=false key=C time = 4/4
 notes :q  4-4/3 :h 4/3 |:h 2/3 :q## :8 3-5/4 | 7-5-7-5/4 :q 2-5/3 | :w 4/3 |
-text .10, :q, 哈,利,:h,路,|,:h,亚,:q, ,:8, 曲,曲, |,折,折,我,也,:q,不,在,|,:w,乎, |
+text .11, :q, 哈,利,:h,路,|,:h,亚,:q, ,:8, 曲,曲, |,折,折,我,也,:q,不,在,|,:w,乎, |
 
 options width=750 space = 20 
 tabstave notation=true tablature=false key=C time = 4/4
@@ -45,6 +47,8 @@ text .10, :q, 哈,利,:h,路,|,:h,亚,:q, ,:8, 在,你, |,手,中,都,将,:q,变
 
 
 options width=750 space = 50 
+
+
 
 
 

@@ -1,7 +1,7 @@
 
 //file: SongEditClass.js  by littleflute 2018/1/12 2:49 bjt
 function _blSongEditClass (_d,_t){
-	this.v = "v0.0.72";
+	this.v = "v0.0.73";
 	var _v = null;
 	var d = _d;
 	var ta = _t;

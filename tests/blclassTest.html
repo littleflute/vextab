@@ -97,7 +97,7 @@ function _blUIClass (v){
   s0 += '<a target="_blank" href="http://littleflute.github.io/vextab/tests/blclassTest.html">' + v + '</a>-';
   s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '*</a>';
   s0 += '</div>';
-  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,10,10,500,200,"gold");
+  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,110,10,500,200,"gold");
   d.tb = bl$("id_div_toolbar");
   d.showVextab = function(_this){	return function(){_this.blRender();blDraw.show();};  }(this);
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","b1",blGrey[0]);
@@ -132,7 +132,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.2.14") ;
+	var blco = new _blUIClass ("v0.2.15") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

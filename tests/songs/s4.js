@@ -8,6 +8,7 @@ function _myData()
 /*
 _begine_
 	
+	
 options space=50 font-size=22
 
 tabstave notation=true tablature=false   time=4/4 
@@ -26,7 +27,24 @@ key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   text ++, .11, :w, -2- --------------------------------
 
 
+	options space=50 font-size=22
+
+tabstave notation=true tablature=false   time=4/4 
+key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
+  notes  :q 5/1  :8 b 5/1 :8 5/1 :8 5/1 6/2 :8 6-5/2| :hd 7/3 :8  7-7/3|
+  notes  :q 6/1 :8 b 6/1 5/1 6/1 7/3 7/3 6/2| :hd 5/2 :8 5-6/1| 
+  text :w, F, Dm,|,bB,|,C, |
+  text ++, .11, :w, -3- --------------------------------------
+
 options space=15
+
+options width=750 space = 50 
+
+
+ 
+
+
+
 
 
 

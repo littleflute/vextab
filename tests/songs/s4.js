@@ -17,7 +17,7 @@ tabstave notation=true tablature=false   time=4/4
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes :8 5-5/3 | :qd 5/1  :8 5/1 :q 5/1 :8 6-5/2  | :hd 7/3 :8 7-7/3| :qd 6/1 :8 5/1 :q 6/1 :8 7/3 6/2| :hd 5/2 :8 5-6/1|
   text :q,.1, ,| ,:w, F, Dm,|,bB,|,C, |
-  text ++, .-4, :w, 因着十架爱
+  text ++, .-4, :w, ,因着十架爱
  
   text ++, .10, :8, 主,你,| ,:qd ,的,:8,身,:q,体, :8,为,我,|,:hd ,舍 ,:8,你 , 的,|,:qd,宝,:8,血,:q,为,:8,我,流,|,:hd,出,:8,诚,然
   text ++, .12, :w, -1- --------------------------------
@@ -28,66 +28,74 @@ tabstave notation=true tablature=false   time=4/4
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3 
   notes  :qd 8/1 :8 8/1 :q 8/1 :8 5/1-8/2| :hd 6/2 :8 8/2-5/1| :qd 6/1 :8 5/1 :q 6/1 :8 7/3 6/2| :hd 5/2 :8 5-5/3| 
   text :w, F, Dm,|,bB,|,C, |
-  text ++, .11, :w, -2- --------------------------------
+  text ++, .10, :qd ,担,:8,当,:q,我,:8,的,痛,|,:hd,苦,:8,定,意,|,:qd,背,:8,负,:q,我,:8,的,痛,|,:hd,苦,:8,因,你
+  text ++, .12, :w, -2- --------------------------------
 
 
-	options space=50 font-size=22
+	options space=50 font-size=14
 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes  :q 5/1  :8 b 5/1 :8 5/1 :8 5/1 6/2 :8 6-5/2| :hd 7/3 :8  7-7/3|
   notes  :q 6/1 :8 b 6/1 5/1 6/1 7/3 7/3 6/2| :hd 5/2 :8 5-6/1| 
   text :w, F, Dm,|,bB,|,C, |
-  text ++, .11, :w, -3- --------------------------------------
+  text ++, .10, :qd ,受,:8,鞭,伤,我,得,医,|,:hd ,治, :8, 因,你,|,:qd,受,:8,刑,罚,我,得,平,|,:hd,安,:8,主,啊 
+  text ++, .12, :w, -3- --------------------------------------
 
 options space=15
 
 
-	options space=50 font-size=22
+	options space=50 font-size=14
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3 
   notes  :q 8/1 :8 b 8/1 8/1  8/1 5/1 5/1-8/2| :hd 6/2 :8 8/2-5/1|
   notes :q 6/1 :8 b 6/1 7/3 5/2 5/2 6/2 8/2| :hd 6/2 :8 6/2-8/2| 
-  text :w, F, Dm,|,:h,bB,C, |, :w,F
-  text ++, .11, :w, -4- --------------------------------
-	options space=50 font-size=22
+  text :w, F, Dm,|,:h,bB,C, |, :w,F  
+text ++, .10, :qd ,我,:8,回,转,到,你,面,|,:hd,前,:8,我,要,|,:qd,经,:8,历,医,治,和,平,|,:hd,安,:8,医,治
+  text ++, .12, :w, -4- --------------------------------
+	options space=50 font-size=14
 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes  :hd 5/1  :q  8/1| :hd 8/1 :8  5/1-8/2|
   notes  :hd 6/2  :8 3b5/1| :hd 5/1 :8  5/1 8/2|
   text :w, F, C,|,Dm,|,bB, |
-  text ++, .11, :w, -5- --------------------------------------
+  text ++, .10, :hd ,和,:q,平,|,:hd,安,:8,因,着,|,:hd,十,:q,架,|,:hd,爱,:8,众,罪
+  text ++, .12, :w, -5- --------------------------------------
 
-	options space=50 font-size=22
+	options space=50 font-size=14
 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes  :hd 6/2  :8  10b8/1| :hd 8/1 :8  5/1-8/2|
   notes  :hd 6/2  :8 5b3/1| :hd 8/2 :8  6/2 8/2|
   text :w, bB, Am,|,bB,|,C, |
-  text ++, .11, :w, -6- --------------------------------------
+  text ++, .10, :hd ,得,:q,赦,|,:hd,免,:8,因,着,|,:hd,十,:q,架,|,:hd,爱,:8,因,着
+  text ++, .12, :w, -6- --------------------------------------
 
-	options space=50 font-size=22
+	options space=50 font-size=14
 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes  :hd 5/1  :q  8/1| :hd 8/1 :8  5/1-8/2|
   notes  :hd 6/2  :8 3b5/1| :hd 5/1 :8  5/1 8/2|
   text :w, F, C,|,Dm,|,bB, |
-  text ++, .11, :w, -7- --------------------------------------
+  text ++, .10, :hd,十,:q,架,|,:hd,爱,:8,因,着,|,:hd,十,:q,架,|,:hd,爱,:8,今,我
+  text ++, .12, :w, -7- --------------------------------------
 
-	options space=50 font-size=22
+	options space=50 font-size=14
 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes  :hd 6/2  :8  10b8/1| :hd 8/1 :8  5/1-8/2|
-  notes  :hd 6/2  :8 5b3/1| :hd 8/2 :8  6/2 8/2|
+  notes  :hd 6/2  :8 8b6/2| :hd 6/2 |
   text :w, bB, Am,|,:h,bB,C, |,:w ,F,|
-  text ++, .11, :w, -8- --------------------------------------
+text ++, .10, :hd,得,:q,洁,|,:hd,净, :8,因,着,|,:hd,十,:q,架,|,:hd,爱
+  text ++, .12, :w, -8- --------------------------------------
 
-options space=15
+options space=111
  
+
 
 
 

@@ -38,16 +38,18 @@ key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
 
 options space=15
 
-options width=750 space = 50 
+
+	options space=50 font-size=22
+tabstave notation=true tablature=false   time=4/4 
+key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3 
+  notes  :q 8/1 :8 b 8/1 8/1  8/1 5/1 5/1-8/2| :hd 6/2 :8 8/2-5/1|
+  notes :q 6/1 :8 b 6/1 7/3 5/2 5/2 6/2 8/2| :hd 6/2 :8 6/2-8/2| 
+  text :w, F, Dm,|,:h,bB,C, |, :w,F
+  text ++, .11, :w, -4- --------------------------------
 
 
+	options space=50 font-size=22 
  
-
-
-
-
-
-
 
 
 _end_

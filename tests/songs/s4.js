@@ -15,11 +15,18 @@ key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3
   notes :8 5-5/3 | :qd 5/1 :8 5/1 :q 5/1 :8 6-5/2| :hd 7/3 :8 7-7/3| :qd 6/1 :8 5/1 :q 6/1 :8 7/3 6/2| :hd 5/2 :8 5-6/1| 
   text :q,.1, ,| ,:w, F, Dm,|,bB,|,C, |
   text ++, .-4, :w, 因着十架爱
+  text ++, .11, :w, -1- --------------------------------
+
+options space=55
+
+tabstave notation=true tablature=false   time=4/4 
+key=F   tuning= E/5,B/4,g/4,D/4,A/3,E/3 
+  notes  :qd 8/1 :8 8/1 :q 8/1 :8 5/1-8/2| :hd 6/2 :8 8/2-5/1| :qd 6/1 :8 5/1 :q 6/1 :8 7/3 6/2| :hd 5/2 :8 5-5/3| 
+  text :w, F, Dm,|,bB,|,C, |
+  text ++, .11, :w, -2- --------------------------------
+
 
 options space=15
-
-
-options width=750 space = 50 
 
 
 

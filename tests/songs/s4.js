@@ -8,10 +8,11 @@ function _myData()
 /*
 _begine_
 	
+	
 	options space=50 font-size=14 width = 666
 
 tabstave notation=true tablature=false   time=4/4 
-key=F   tuning= E/4,B/3,g/3,D/3,A/2,E/2
+key=F   tuning= E/5,B/4,g/3,D/3,A/2,E/2
   notes :8 (6/1.8/2)(8/1.10/2)|:q (10/1.11/2):8 (1/1.3/2)(1/1.3/2) (3/1.5/2)(3/1.5/2) (5/1.6/2)(6/1.8/2) |:w (8/1.10/2.10/3)|(10/1.10/2.7/3)|(10/1.11/2.8/4)|:hd (8/1.8/2.5/3) :8 5-5/3
   text :q,.-1, ,| ,:h, bB, C,|,:w,F,|,Dm,|,bB,|,C
   text ++, .-5, :8,|, :w, ,因着十架爱
@@ -113,6 +114,9 @@ text ++, .10, :hd,得,:q,洁,|,:hd,净, :8,因,着,|,:hd,十,:q,架,|,:hd,爱
   text ++, .12, :w, -8- --------------------------------------
 
 options space=111
+   
+ 
+
    
  
 _end_

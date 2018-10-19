@@ -21,27 +21,37 @@ key=F   tuning= E/4,B/3,g/3,D/3,A/2,E/2
 
 	
 	
-options space=65 font-size=14 width = 666
+options space=70 font-size=14 width = 666
 
 tabstave notation=true tablature=false   time=4/4 
+
 key=F   tuning= E/4,B/3,g/3,D/3,A/2,E/2
+
+voice
+  notes :w #14# | :q #12# :8 13-13-13-13-13-12/1|:hd 10/1 :q ## |
+  notes  :q #12# :8 15-15-15-15-13-15/1
+voice
   notes  :qd 5/1  :8 5/1 :q 5/1 :8 6-5/2  | :hd 7/3 :8 7-7/3| :qd 6/1 :8 5/1 :q 6/1 :8 7/3 6/2| :hd 5/2 :8 5-6/1|
   text :q,.1 | ,:w, F, Dm,|,bB,|,C, | 
  
-  text ++, .10 ,:qd ,的,:8,身,:q,体, :8,为,我,|,:hd ,舍 ,:8,你 , 的,|,:qd,宝,:8,血,:q,为,:8,我,流,|,:hd,出,:8,诚,然
-  text ++, .12, :w, -1- --------------------------------
-
-options space=55
-
+  text ++, .13 ,:qd ,的,:8,身,:q,体, :8,为,我,|,:hd ,舍 ,:8,你 , 的,|,:qd,宝,:8,血,:q,为,:8,我,流,|,:hd,出,:8,诚,然
+  text ++, .15, :w, -1- --------------------------------
+options space=85
+ 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/4,B/3,g/3,D/3,A/2,E/2
+voice 
+  notes :w 17/1| :q #12# :8 17-15/1 :q 13/1 :8 18-20/1 | :w 22/1 | 
+  notes :q #12# :8 15-15/1 :q 15/1 :8 17-18/1
+voice
   notes  :qd 8/1 :8 8/1 :q 8/1 :8 5/1-8/2| :hd 6/2 :8 8/2-5/1| :qd 6/1 :8 5/1 :q 6/1 :8 7/3 6/2| :hd 5/2 :8 5-5/3| 
   text :w, F, Dm,|,bB,|,C, |
-  text ++, .10, :qd ,担,:8,当,:q,我,:8,的,痛,|,:hd,苦,:8,定,意,|,:qd,背,:8,负,:q,我,:8,的,痛,|,:hd,苦,:8,因,你
-  text ++, .12, :w, -2- --------------------------------
+  text ++, .13, :qd ,担,:8,当,:q,我,:8,的,痛,|,:hd,苦,:8,定,意,|,:qd,背,:8,负,:q,我,:8,的,痛,|,:hd,苦,:8,因,你
+  text ++, .15, :w, -2- --------------------------------
+options space=55
 
 
-	options space=50 font-size=14
+options space=50 font-size=14
 
 tabstave notation=true tablature=false   time=4/4 
 key=F   tuning= E/4,B/3,g/3,D/3,A/2,E/2
@@ -103,7 +113,7 @@ text ++, .10, :hd,得,:q,洁,|,:hd,净, :8,因,着,|,:hd,十,:q,架,|,:hd,爱
   text ++, .12, :w, -8- --------------------------------------
 
 options space=111
- 
+   
  
 _end_
 */

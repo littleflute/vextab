@@ -89,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".114";
+	v += ".121";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -97,7 +97,7 @@ function _blUIClass (v){
   s0 += '<a target="_blank" href="http://littleflute.github.io/vextab/tests/blclassTest.html">' + v + '</a>-';
   s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '*</a>';
   s0 += '</div>';
-  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,210,10,500,200,"brown");
+  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,210,10,500,200, blGrey[5] );
   d.tb = bl$("id_div_toolbar");
   d.showVextab = function(_this){	return function(){_this.blRender();blDraw.show();};  }(this);
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","+editor",blGrey[0]);

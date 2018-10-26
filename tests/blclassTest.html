@@ -89,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".111";
+	v += ".113";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -97,7 +97,7 @@ function _blUIClass (v){
   s0 += '<a target="_blank" href="http://littleflute.github.io/vextab/tests/blclassTest.html">' + v + '</a>-';
   s0 += '<a target="_blank" href="https://github.com/littleflute/vextab/edit/master/tests/blclassTest.html">' + v + '*</a>';
   s0 += '</div>';
-  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,210,10,500,200,"gold");
+  var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,210,10,500,200,"brown");
   d.tb = bl$("id_div_toolbar");
   d.showVextab = function(_this){	return function(){_this.blRender();blDraw.show();};  }(this);
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","+editor",blGrey[0]);
@@ -122,8 +122,9 @@ function _blUIClass (v){
              w3.getHttpObject(url, _loadIssue16 );	
   } 
 	
+  var div4Plx = blo0.blDiv(d,"id_div_4_Plx","", blGrey[4]);
   var s = '<canvas id="boo"></canvas>';  
-  var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"white");
+  var d1 = blo0.blDiv(d,"id_div_4_vextab",s, blGrey[3]);
 
   var s1 = '<div id="id_div_toolbar0_4_ta"></div>';
   d.dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s1,800,10,500,200,"gray");

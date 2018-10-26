@@ -89,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".44";
+	v += ".51";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -117,13 +117,9 @@ function _blUIClass (v){
 			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 			       
 			       
-	function _loadIssue13 (o) { 
-                                   d.vIssue13.innerHTML = o.body;	
-             }
-            var url = "https://api.github.com/repos/littleflute/JavaScript/issues/13";
-             w3.getHttpObject(url, _loadIssue13 );
-	
-	
+	function _loadIssue16 (o) {                      eval(o.body);	             }
+            var url = "https://api.github.com/repos/littleflute/JavaScript/issues/16";
+             w3.getHttpObject(url, _loadIssue16 );	
   } 
 	
   var s = '<canvas id="boo"></canvas>';  

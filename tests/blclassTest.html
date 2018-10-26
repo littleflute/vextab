@@ -90,7 +90,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".24";
+	v += ".31";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -104,7 +104,10 @@ function _blUIClass (v){
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","b1",blGrey[0]);
   d.tb.b1.onclick = function(){	_on_off_div(this,d.dt);  }
   d.tb.b2 = blo0.blBtn(d.tb,d.tb.id + "b2","b2",blGrey[0]);
-  d.tb.b2.onclick = function(){	_on_off_div(this,d.handle);	_on_off_div(this,d.main);  } 
+  d.tb.b2.onclick = function(){	_on_off_div(this,d.handle);	_on_off_div(this,d.main); 
+			        var b = this;
+			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
+			      } 
   var s = '<canvas id="boo"></canvas>';  
   var d1 = blo0.blDiv(d,"id_div_4_vextab",s,"white");
 
@@ -123,7 +126,7 @@ function _blUIClass (v){
   d.dt.ctb = _blChordToolBar(bl$("id_div_toolbar0_4_ta"),d); 
  
   d.tb.b1.click();
-  d.tb.b2.click();  var b = d.tb.b2; b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
+  d.tb.b2.click();   
   d.dt.tb0.b1.click();
   d.dt.ctb.e.click();
 }

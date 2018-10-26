@@ -32,7 +32,6 @@ options space=70</textarea><!-- ====ta0==== -->
 
 <!-- ----ta1---- -->
 <textarea id="ta1">
-
     
 options space=20
 tabstave notation=true tablature=false  
@@ -90,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".32";
+	v += ".34";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -103,7 +102,7 @@ function _blUIClass (v){
   d.showVextab = function(_this){	return function(){_this.blRender();blDraw.show();};  }(this);
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","b1",blGrey[0]);
   d.tb.b1.onclick = function(){	_on_off_div(this,d.dt);  }
-  d.tb.b2 = blo0.blBtn(d.tb,d.tb.id + "b2","b2",blGrey[0]);
+  d.tb.b2 = blo0.blBtn(d.tb,d.tb.id + "b2","+Handle",blGrey[0]);
   d.tb.b2.onclick = function(){	_on_off_div(this,d.handle);	_on_off_div(this,d.main); 
 			        var b = this;
 			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];

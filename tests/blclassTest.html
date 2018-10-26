@@ -89,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".35";
+	v += ".41";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -101,7 +101,10 @@ function _blUIClass (v){
   d.tb = bl$("id_div_toolbar");
   d.showVextab = function(_this){	return function(){_this.blRender();blDraw.show();};  }(this);
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","b1",blGrey[0]);
-  d.tb.b1.onclick = function(){	_on_off_div(this,d.dt);  }
+  d.tb.b1.onclick = function(){	_on_off_div(this,d.dt);  
+			        var b = this;
+			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
+			      }
   d.tb.b2 = blo0.blBtn(d.tb,d.tb.id + "b2","+Handle",blGrey[0]);
   d.tb.b2.onclick = function(){	_on_off_div(this,d.handle);	_on_off_div(this,d.main); 
 			        var b = this;
@@ -114,7 +117,10 @@ function _blUIClass (v){
   d.dt = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap2",s1,800,10,500,200,"gray");
   d.dt.tb0 = blo0.blDiv(bl$("id_div_toolbar0_4_ta"),bl$("id_div_toolbar0_4_ta").id+"tb0","tb0::",blGrey[0]);
   d.dt.tb0.b1 = blo0.blBtn(d.dt.tb0,d.dt.tb0.id + "b1","b1",blGrey[0]);
-  d.dt.tb0.b1.onclick = function(){	_on_off_div(this,d.dt.handle);	_on_off_div(this,d.dt.main);   }
+  d.dt.tb0.b1.onclick = function(){	_on_off_div(this,d.dt.handle);	_on_off_div(this,d.dt.main);
+			        var b = this;
+			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
+			}
 
 
   d.dt.dta = blo0.blDiv(d.dt,"id_div_4_ta","","blue");

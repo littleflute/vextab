@@ -89,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".113";
+	v += ".114";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -111,12 +111,8 @@ function _blUIClass (v){
 			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 			      } 
 	
-  d.tb.b3 = blo0.blBtn(d.tb,d.tb.id + "b3","+plx",blGrey[3]);
-  d.tb.b3.onclick = function(){	
-			        var b = this;
-			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
-			       
-			       
+  d.tb.b3 = blo0.blBtn(d.tb, "id_btn_Load_Plx" ,"+plx",blGrey[3]);
+  d.tb.b3.onclick = function(){ 
 	function _loadIssue16 (o) {                      eval(o.body);	             }
             var url = "https://api.github.com/repos/littleflute/JavaScript/issues/16";
              w3.getHttpObject(url, _loadIssue16 );	

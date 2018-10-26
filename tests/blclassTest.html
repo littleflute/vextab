@@ -90,6 +90,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
+	v += ".23";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -122,7 +123,7 @@ function _blUIClass (v){
   d.dt.ctb = _blChordToolBar(bl$("id_div_toolbar0_4_ta"),d); 
  
   d.tb.b1.click();
-  d.tb.b2.click();
+  d.tb.b2.click();  var b = d.tb.b2; b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
   d.dt.tb0.b1.click();
   d.dt.ctb.e.click();
 }
@@ -132,7 +133,7 @@ function _blUIClass (v){
   // Load VexTab module.    
   vextab = VexTabDiv;
     $(function() {
-	var blco = new _blUIClass ("v0.2.22") ;
+	var blco = new _blUIClass ("v0.2") ;
       VexTab = vextab.VexTab;
       Artist = vextab.Artist;
       Renderer = Vex.Flow.Renderer;

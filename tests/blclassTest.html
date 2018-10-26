@@ -89,7 +89,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".52";
+	v += ".54";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -112,7 +112,7 @@ function _blUIClass (v){
 			      } 
 	
   d.tb.b3 = blo0.blBtn(d.tb,d.tb.id + "b3","+plx",blGrey[3]);
-  d.tb.b3.onclick = function(){	_on_off_div(this,d.handle);	_on_off_div(this,d.main); 
+  d.tb.b3.onclick = function(){	
 			        var b = this;
 			        b.style.background = b.style.background=="red"?blGrey[5]:blColor[4];
 			       

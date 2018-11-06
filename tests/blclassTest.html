@@ -95,7 +95,7 @@ function _blChordToolBar (_o,_d){
 	return r;
 }
 function _blUIClass (v){
-	v += ".131";
+	v += ".132";
   var blDraw = new blDrawClass;
   this.blRender = function(){alert(v);};
 
@@ -106,6 +106,7 @@ function _blUIClass (v){
   var d = blo0.blMDiv(document.body,"id_blClassDiv_4_wrap1",s0,210,10,500,200, blGrey[5] );
   d.tb = bl$("id_div_toolbar");
   d.showVextab = function(_this){	return function(){_this.blRender();blDraw.show();};  }(this);
+  d.tb.b0 = blo0.blBtn(d.tb, "id_btn_4_blApp", "+blApp", blGrey[0]);
   d.tb.b1 = blo0.blBtn(d.tb,d.tb.id + "b1","+editor",blGrey[0]);
   d.tb.b1.onclick = function(){	_on_off_div(this,d.dt);  
 			        var b = this;

@@ -5,53 +5,55 @@
   <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT|Yanone+Kaffeesatz|Tangerine'
    rel='stylesheet' type='text/css'>
   <link href="style.css" media="screen" rel="Stylesheet" type="text/css" />
-
   <!-- Support Sources -->
   <link href="../releases/vextab.css" media="screen" rel="Stylesheet" type="text/css" />
   <script src="../releases/vextab-div.js"></script>
   <script>
-    VexTabDiv.Artist.DEBUG = false
+      VexTabDiv.Artist.DEBUG = false
   </script>
-
 </head>
 
 <body>
-  <a href="https://github.com/littleflute/vextab/edit/master/doc/xd1.html" target="blank">v2.9.13</a>
-  <a id="id_btn_4_blApp" href="#">+id_btn_4_blApp---------------------------</a>
-  
-  <br>   
-<div style="border:0px red solid;">
-  <p id="songTitle" style="background-color:green;text-align: center;color:yellow;font-size:24px;">童年</p>
-
-  <div id="myID" class="vex-tabdiv" width=680 scale=1.0 editor="true" editor_width=680 editor_height=130>
-    
-options space=20
-tabstave notation=true tablature=false  
-key=A time=4/4
-notes :8 B/4 :q C/5 :8 B/4 :q C/5 B/4 |  :8 B/4 :q C/5 :8 B/4 :qd C/5 :8 E/4 |  F-A-A-A/4 B-G-E/4-C/5 | :h bC/5 :qd bC/5 :8 E/5|
-text :w, .1, A, A,|
-text :h, .1, D, E,| 
-text :w, .1, F#m
-
-options space=20
-tabstave notation=true tablature=false
-
-key=A time=4/4
-notes :8 F-E/5 :q F/5 :8 D-C/5-B-A/4 |:h bA/4 E/4 |:q A/4 :8 C/5 B/4 bB/4 E-F-E/4 |:q A/4
-text :h, .1, D, E,| 
-text :w, .1, A
-text :w, .1, A  
-
-options space=25
-
-  
-
-  </div>
-</div>
+  <div style="text-align: right;" id="id_4_div_1">
+      <a href="https://github.com/littleflute/vextab/edit/master/doc/xd1.html" target="blank">v2.9.31</a>
+      <button style="color: lightgreen;" id="id_btn_4_blApp" href="#" >+id_btn_4_blApp-</button>
+</div>   
   
 <script src="https://littleflute.github.io/JavaScript/w3.js" ></script>	
 <script src="https://littleflute.github.io/JavaScript/blclass.js" ></script>	
 <script src="https://littleflute.github.io/JavaScript/blApp.js"></script>
+<script>
+  var btnJsPlx = blo0.blBtn(bl$("id_4_div_1"),"id_4_btnJsPlx","btnJsPlx",blGrey[0]);
+  btnJsPlx.onclick = function(){
+    blo0.blScript("id_4_jsPlx","jsPlx/plx.js");
+  }
+  var b = bl$("id_btn_4_blApp");
+  b.c = 0;
+  var timer = setInterval(_t,1);
+  var i = 0;
+  function _t(){
+    b.innerHTML = i;i++;
+    if(0==b.c)
+    {
+      b.click(); b.c++;
+    } 
+    if(i>100)
+    {
+      clearInterval(timer);
+      b.innerHTML = "blApp";
+    }  
+  }
+
+  var d1 = blo0.blMDiv(document.body, "idv1","d1",50,50,850,400, blGrey[0]);
+  d1.v = blo0.blDiv(d1,d1.id+"v","v", "white");
+ 
+  var s = '<div id="myID" class="vex-tabdiv" width=680 scale=1.0 editor="true" editor_width=680 editor_height=130>';
+  s     += 'options space=20 \n';
+  s     += 'tabstave notation=true tablature=false \n'
+  s     += 'key=A time=4/4 \n';
+  s     += 'notes :8 B/4 :q C/5 :8 B/4 :q C/5 B/4 |  :8 B/4 :q C/5 :8 B/4 :qd C/5 :8 E/4 |  F-A-A-A/4 B-G-E/4-C/5 | :h bC/5 :qd bC/5 :8 E/5|';
+  d1.v.innerHTML = s;
+  </script>
 </body>
 
 </html>

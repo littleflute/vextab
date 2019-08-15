@@ -15,7 +15,7 @@
 
 <body>
   <div style="text-align: right;" id="id_4_div_1">
-      <a href="https://github.com/littleflute/vextab/edit/master/doc/xd1.html" target="blank">v2.9.31</a>
+      <a href="https://github.com/littleflute/vextab/edit/master/doc/xd1.html" target="blank">v2.9.32</a>
       <button style="color: lightgreen;" id="id_btn_4_blApp" href="#" >+id_btn_4_blApp-</button>
 </div>   
   
@@ -23,10 +23,7 @@
 <script src="https://littleflute.github.io/JavaScript/blclass.js" ></script>	
 <script src="https://littleflute.github.io/JavaScript/blApp.js"></script>
 <script>
-  var btnJsPlx = blo0.blBtn(bl$("id_4_div_1"),"id_4_btnJsPlx","btnJsPlx",blGrey[0]);
-  btnJsPlx.onclick = function(){
-    blo0.blScript("id_4_jsPlx","jsPlx/plx.js");
-  }
+ 
   var b = bl$("id_btn_4_blApp");
   b.c = 0;
   var timer = setInterval(_t,1);
@@ -45,6 +42,11 @@
   }
 
   var d1 = blo0.blMDiv(document.body, "idv1","d1",50,50,850,400, blGrey[0]);
+  var btnJsPlx = blo0.blBtn(d1,"id_4_btnJsPlx","btnJsPlx",blGrey[0]);
+  btnJsPlx.onclick = function(){
+    blo0.blScript("id_4_jsPlx","jsPlx/plx.js");
+  }
+
   d1.v = blo0.blDiv(d1,d1.id+"v","v", "white");
  
   var s = '<div id="myID" class="vex-tabdiv" width=680 scale=1.0 editor="true" editor_width=680 editor_height=130>';
